@@ -6,19 +6,19 @@
     :root {
         --background: 0 0% 13%;
         --background-light: 0 0% 19%;
-        --foreground: 0 0% 87%;
+        --foreground: 0 0% 100%;
 
         --card: 0 0% 3.9%;
         --card-foreground: 0 0% 98%;
         --popover: 0 0% 3.9%;
         --popover-foreground: 0 0% 98%;
 
-        --primary: 140 100% 47%;
+        --primary: 43 96% 56%;
         --primary-foreground: 0 0% 13%;
         --secondary: 193 100% 47%;
         --secondary-foreground: 0 0% 13%;
         --muted: 0 0% 14.9%;
-        --muted-foreground: 0 0% 71%;
+        --muted-foreground: 0 0% 93%;
         --accent: 0 0% 14.9%;
         --accent-foreground: 0 0% 98%;
         --destructive: 0 62.8% 30.6%;
@@ -43,6 +43,21 @@
     }
     body {
         @apply bg-background text-foreground font-roboto-flex;
+    }
+}
+
+@layer utilities {
+    @keyframes scan {
+        0% {
+            top: -2px;
+        }
+        100% {
+            top: 100%;
+        }
+    }
+
+    .animate-scan {
+        animation: scan 6s linear infinite;
     }
 }
 
