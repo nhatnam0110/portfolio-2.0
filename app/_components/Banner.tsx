@@ -102,7 +102,7 @@ const Banner = () => {
                         rel="noopener noreferrer"
                         href={GENERAL_INFO.upworkProfile}
                         variant="primary"
-                        className="mt-9 banner-button slide-up-and-fade font-mono tracking-widest"
+                        className="mt-9 banner-button slide-up-and-fade font-anton tracking-widest"
                     >
                         Hire Me
                     </Button>
