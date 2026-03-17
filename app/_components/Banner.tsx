@@ -73,7 +73,7 @@ const Banner = () => {
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
                     {/* Terminal tag */}
                     <div className="slide-up-and-fade mb-3 inline-block text-xs font-mono px-2 py-1 border border-primary/30 text-primary/70 bg-primary/5">
-                        // FRONTEND_DEV.tsx
+                        {'// FRONTEND_DEV.tsx'}
                     </div>
 
                     <p className="slide-up-and-fade text-sm font-mono text-muted-foreground mb-2 tracking-widest uppercase">

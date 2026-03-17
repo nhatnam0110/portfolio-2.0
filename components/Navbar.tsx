@@ -121,7 +121,7 @@ const Navbar = () => {
                                 SOCIAL
                             </p>
                             <ul className="space-y-3">
-                                {SOCIAL_LINKS.map((link, idx) => (
+                                {SOCIAL_LINKS.map((link) => (
                                     <li key={link.name}>
                                         <a
                                             href={link.url}
