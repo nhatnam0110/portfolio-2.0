@@ -44,6 +44,7 @@ export default function RootLayout({
         <html lang="en">
             <body
                 className={`${antonFont.variable} ${robotoFlex.variable} antialiased`}
+                suppressHydrationWarning
             >
                 <ReactLenis
                     root

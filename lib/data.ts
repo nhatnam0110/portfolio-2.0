@@ -76,11 +76,14 @@ export const PROJECTS: IProject[] = [
             'tRPC',
             'PostgreSQL',
         ],
-        thumbnail: '/projects/thumbnail/vision-guard-ai.webp',
-        longThumbnail: '/projects/long/vision-guard-ai.webp',
+        thumbnail: '/projects/thumbnail/aicreek2.0.png',
+        longThumbnail: '/projects/long/aicreek2.0.png',
         images: [
-            '/projects/images/vision-guard-ai-1.webp',
-            '/projects/images/vision-guard-ai-2.webp',
+            '/projects/images/aicreek2.0-1.png',
+            '/projects/images/aicreek2.0-2.png',
+            '/projects/images/aicreek2.0-3.png',
+            '/projects/images/aicreek2.0-4.png',
+            '/projects/images/aicreek2.0-5.png',
         ],
     },
     {
@@ -89,38 +92,50 @@ export const PROJECTS: IProject[] = [
         liveUrl: '',
         year: 2025,
         description: `
-            A rental property management platform with role-based dashboards for landlords and tenants, handling listings, payments, and document management.<br/><br/>
+            A full-stack rental property management platform connecting tenants, landlords, and property managers through role-based dashboards, real-time communication, and automated workflows.<br/><br/>
 
             Key Features:<br/>
             <ul>
-                <li>🔐 Role-based dashboards with dynamic UI rendering based on user permissions</li>
-                <li>🏠 Property listing, search, and detail pages with fully responsive layouts</li>
-                <li>📋 Multi-step forms for posting rental properties and submitting maintenance requests</li>
-                <li>💳 Backend API integration for authentication, payments, and document management</li>
+                <li>🔐 Three distinct role-based dashboards (Tenant, Landlord, Property Manager) with server-side role guards and dynamic UI per permission level</li>
+                <li>🏠 Property browsing with filters (type, price range, availability, city), paginated listings, and an interactive Leaflet map that focuses on selected properties</li>
+                <li>📋 Full rental lifecycle — rent requests, lease agreement generation, security deposit handling, and lease document uploads</li>
+                <li>💳 Stripe-powered checkout for monthly rent payments with success and cancellation redirect pages</li>
+                <li>🔧 Maintenance request system with urgency levels, photo uploads, and status tracking (Pending → In Progress → Completed)</li>
+                <li>💬 Real-time messaging between tenants, landlords, and property managers via WebSocket (STOMP over SockJS)</li>
+                <li>🔔 Live in-app notifications via WebSocket with toast alerts and a notification centre with mark-as-read support</li>
+                <li>👥 Property manager invitation and assignment flow — landlords invite managers, managers accept or decline, and can relinquish properties</li>
             </ul>
         `,
         role: `
             Frontend Developer<br/><br/>
             <ul>
-                <li>✅ Developed role-based dashboards for landlords and tenants</li>
-                <li>🎨 Converted Figma designs into pixel-accurate, production-ready React components</li>
-                <li>🔗 Integrated frontend with backend APIs for authentication, payments, and documents</li>
-                <li>📱 Built multi-step forms and fully responsive layouts</li>
+                <li>✅ Architected the entire Next.js frontend with App Router, server-side layout guards per role, and a shared protected layout with WebSocket context</li>
+                <li>🎨 Built all three role dashboards from scratch — Tenant, Landlord, and Property Manager — each with their own stat cards, quick actions, and work queues</li>
+                <li>🔗 Integrated with a Spring Boot backend via Axios, handling auth tokens from StackAuth, multipart form uploads, paginated responses, and blob downloads for PDF reports</li>
+                <li>💬 Implemented real-time WebSocket connection using STOMP and SockJS, feeding a global notification context accessible across all authenticated pages</li>
+                <li>🗺️ Integrated Leaflet maps for property location browsing and static map pins on property detail pages using OpenStreetMap and Nominatim reverse geocoding</li>
             </ul>
         `,
         techStack: [
-            'React',
+            'Next.js',
             'TypeScript',
             'Tailwind CSS',
             'ShadCN/UI',
-            'REST APIs',
-            'PostgreSQL',
+            'WebSocket',
+            'Stripe',
+            'Leaflet',
+            'Spring Boot',
         ],
-        thumbnail: '/projects/thumbnail/rentmate.webp',
-        longThumbnail: '/projects/long/rentmate.webp',
+        thumbnail: '/projects/thumbnail/rentmate.png',
+        longThumbnail: '/projects/long/rentmate.png',
         images: [
-            '/projects/images/rentmate-1.webp',
-            '/projects/images/rentmate-2.webp',
+            '/projects/images/rentmate-1.png',
+            '/projects/images/rentmate-2.png',
+            '/projects/images/rentmate-3.png',
+            '/projects/images/rentmate-4.png',
+            '/projects/images/rentmate-5.png',
+            '/projects/images/rentmate-6.png',
+            '/projects/images/rentmate-7.png',
         ],
     },
     {
@@ -156,11 +171,11 @@ export const PROJECTS: IProject[] = [
             'REST APIs',
             'Git',
         ],
-        thumbnail: '/projects/thumbnail/devision.webp',
-        longThumbnail: '/projects/long/devision.webp',
+        thumbnail: '/projects/thumbnail/devision.png',
+        longThumbnail: '/projects/long/devision.png',
         images: [
-            '/projects/images/devision-1.webp',
-            '/projects/images/devision-2.webp',
+            '/projects/images/devision-1.png',
+            '/projects/images/devision-2.png',
         ],
     },
 ];
