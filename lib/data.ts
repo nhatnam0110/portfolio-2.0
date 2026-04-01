@@ -87,6 +87,56 @@ export const PROJECTS: IProject[] = [
         ],
     },
     {
+        title: 'FuelWise',
+        slug: 'fuelwise',
+        liveUrl: 'https://fuelwise-beta.vercel.app',
+        year: 2025,
+        description: `
+            A personal AI-powered nutrition coach web app that helps users track their diet, generate recipes, and reach their fitness goals.<br/><br/>
+
+            Key Features:<br/>
+            <ul>
+                <li>🎯 Personalized macro & calorie targets via TDEE calculation</li>
+                <li>🤖 AI recipe generation powered by Claude (Anthropic)</li>
+                <li>🍽️ Meal logging with food search via Open Food Facts API</li>
+                <li>📊 Daily macro tracking with interactive progress rings</li>
+                <li>⚖️ Weight history & progress charts</li>
+                <li>📅 Full meal-level food history with date filters</li>
+                <li>🌐 Bilingual UI (English / Vietnamese)</li>
+                <li>📱 PWA-ready, mobile-first design</li>
+            </ul>
+        `,
+        role: `
+            Sole Developer<br/><br/>
+            <ul>
+                <li>✅ Designed and built the entire app from scratch — UI/UX, architecture, and deployment</li>
+                <li>🤖 Integrated Claude API (Anthropic) for personalized AI recipe generation</li>
+                <li>🍎 Connected Open Food Facts API for food search and meal logging</li>
+                <li>🗂️ Architected global state management with Zustand for nutrition and user data</li>
+                <li>🎨 Built a mobile-first, PWA-ready interface with Tailwind CSS and Framer Motion animations</li>
+                <li>🚀 Deployed to Vercel with full CI/CD pipeline</li>
+            </ul>
+        `,
+        techStack: [
+            'React',
+            'TypeScript',
+            'Vite',
+            'Tailwind CSS',
+            'Zustand',
+            'Framer Motion',
+            'Claude API',
+            'Vercel',
+        ],
+        thumbnail: '/projects/thumbnail/fuelwise.png',
+        longThumbnail: '/projects/long/fuelwise.png',
+        images: [
+            '/projects/images/fuelwise-1.png',
+            '/projects/images/fuelwise-2.png',
+            '/projects/images/fuelwise-3.png',
+            '/projects/images/fuelwise-4.png',
+        ],
+    },
+    {
         title: 'RentMate',
         slug: 'rentmate',
         liveUrl: '',
